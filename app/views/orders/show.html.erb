@@ -1,0 +1,9 @@
+<h1>Order Details</h1>
+
+<p>Product Name: <%=@order.product_name%></p>
+<p>Product Count: <%=@order.product_count%></p>
+<p>Customer Ref. <%=@order.customer%></p>
+
+<%= link_to 'Edit', edit_order_path %>
+<%= link_to 'Back', orders_path %>
+<%= link_to 'Delete', @order, method: :delete %> 
